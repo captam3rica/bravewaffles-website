@@ -32,6 +32,9 @@ nav .inner {
   padding: 28px 40px; font-size: 14px;
 }
 nav .brand { display: flex; align-items: center; gap: 10px; color: var(--purple); font-weight: 700; text-decoration: none; }
+nav .brand-waffle { width: 24px; height: 24px; flex: none; }
+html[data-theme='light'] .brand-waffle-white { display: none; }
+html[data-theme='dark'] .brand-waffle-black { display: none; }
 nav .links { display: flex; gap: 20px; }
 nav .right { display: flex; align-items: baseline; gap: 20px; }
 nav a { color: var(--comment); text-decoration: none; }
