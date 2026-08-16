@@ -15,7 +15,7 @@ html[data-theme='light'] {
 
 body {
   display: flex; flex-direction: column; min-height: 100vh;
-  background: var(--outer); color: var(--fg);
+  background: var(--bg); color: var(--fg);
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   line-height: 1.6;
 }
