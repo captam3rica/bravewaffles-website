@@ -16,7 +16,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link id="favicon" rel="icon" type="image/png" href="/bravewaffle-white.png" />
+    <link rel="icon" type="image/png" href="/bravewaffle-white.png" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -34,8 +34,6 @@ const {
         try {
           if (localStorage.getItem('bravewaffles-theme') === 'light') {
             document.documentElement.dataset.theme = 'light';
-            var f = document.getElementById('favicon');
-            if (f) f.href = '/bravewaffle-black.png';
           }
         } catch (e) {}
       })();

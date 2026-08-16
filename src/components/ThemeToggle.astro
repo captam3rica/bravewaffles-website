@@ -8,9 +8,6 @@
   const btn = document.getElementById('theme-toggle');
   btn?.addEventListener('click', () => {
     const current = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
-    const next = toggleTheme(current);
-    applyTheme(next);
-    const f = document.getElementById('favicon');
-    if (f) f.href = next === 'light' ? '/bravewaffle-black.png' : '/bravewaffle-white.png';
+    applyTheme(toggleTheme(current));
   });
 </script>
