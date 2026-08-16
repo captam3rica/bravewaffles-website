@@ -91,7 +91,7 @@ html[data-theme='light'] .cta-primary { color: #fff; }
 .feature p { font-size: 14px; color: var(--comment); }
 
 /* Product page: icon header + screenshot gallery */
-.product-header { display: flex; gap: 24px; align-items: center; }
+.product-header { display: flex; gap: 24px; align-items: center; justify-content: space-between; }
 .app-icon { width: 64px; height: 64px; flex: none; border-radius: 14px; }
 .shots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 16px; }
 .shot { margin: 0; border: 1px solid var(--cl); border-radius: 8px; overflow: hidden; }
