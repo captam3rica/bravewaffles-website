@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "test": "vitest run"
+    "test": "NODE_OPTIONS=--no-experimental-webstorage vitest run"
   },
   "dependencies": {
     "astro": "^5.0.0"
@@ -17,6 +17,6 @@
     "@astrojs/check": "^0.9.4",
     "jsdom": "^26.0.0",
     "typescript": "^5.6.0",
-    "vitest": "^3.0.0"
+    "vitest": "^4.1.10"
   }
 }
