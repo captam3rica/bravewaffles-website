@@ -18,11 +18,32 @@ const features = [
 ---
 <Base title={`${PRODUCT_NAME} — a macOS journaling app`}>
   <main class="page">
-    <h1>{PRODUCT_NAME}</h1>
-    <p class="tagline">{PRODUCT_TAGLINE}</p>
+    <div class="product-header">
+      <img class="app-icon" src="/app-icon.svg" width="64" height="64" alt="Consistent Notes app icon" />
+      <div>
+        <h1>{PRODUCT_NAME}</h1>
+        <p class="tagline">{PRODUCT_TAGLINE}</p>
+      </div>
+    </div>
     <div class="cta-row">
       <a class="cta cta-primary" href={APP_STORE_MAC_URL}>Get the app for macOS</a>
       <a class="cta cta-secondary" href={APP_STORE_IOS_URL}>Get the app for iOS</a>
+    </div>
+
+    <h2 class="section-title">Preview</h2>
+    <div class="shots-grid">
+      <figure class="shot">
+        <img src="/screenshots/editor-view.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes editor view" />
+        <figcaption>Editor view</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/screenshots/notes-list.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes notes list" />
+        <figcaption>Notes list</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/screenshots/year-view.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes year heatmap view" />
+        <figcaption>Year view</figcaption>
+      </figure>
     </div>
 
     <h2 class="section-title">Features</h2>
