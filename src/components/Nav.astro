@@ -1,0 +1,25 @@
+---
+import { BLOG_URL } from '../lib/site';
+import ThemeToggle from './ThemeToggle.astro';
+import WaffleMark from './WaffleMark.astro';
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/consistent-notes', label: 'Consistent Notes' },
+  { href: BLOG_URL, label: 'Blog \u2192' },
+];
+---
+<nav>
+  <div class="inner">
+    <a class="brand" href="/">
+      <WaffleMark />
+      <span>~/bravewaffles</span>
+    </a>
+    <div class="right">
+      <div class="links">
+        {links.map((l) => <a href={l.href}>{l.label}</a>)}
+      </div>
+      <ThemeToggle />
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,18 @@
+---
+import { BLOG_URL, GITHUB_URL, SITE_NAME } from '../lib/site';
+import WaffleMark from './WaffleMark.astro';
+---
+<footer>
+  <div class="inner">
+    <div class="foot-left">
+      <span class="mark"><WaffleMark /> <span>bravewaffles</span></span>
+      <span class="links">
+        <a href={BLOG_URL}>Blog</a>
+        <a href={GITHUB_URL}>GitHub</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+      </span>
+    </div>
+    <span class="copy">&copy; 2026 {SITE_NAME}, LLC.</span>
+  </div>
+</footer>
