@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import SvgDefs from '../components/SvgDefs.astro';
+
+const {
+  title,
+  description = 'Bravewaffles builds Consistent Notes, a macOS journaling app that lives in your menubar.',
+} = Astro.props;
+---
+
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content={new URL('/og.svg', Astro.site)} />
+    <script is:inline>
+      (function () {
+        try {
+          if (localStorage.getItem('bravewaffles-theme') === 'light') {
+            document.documentElement.dataset.theme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <SvgDefs />
+    <Nav />
+    <div class="wrap">
+      <slot />
+    </div>
+    <Footer />
+  </body>
+</html>
