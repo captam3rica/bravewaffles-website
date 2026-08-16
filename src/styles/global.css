@@ -28,13 +28,12 @@ body {
 nav { border-bottom: 1px solid var(--cl); }
 nav .inner {
   max-width: 1240px; margin: 0 auto; width: 100%;
-  display: flex; gap: 20px; align-items: center; justify-content: space-between;
+  display: flex; gap: 20px; align-items: baseline; justify-content: space-between;
   padding: 28px 40px; font-size: 14px;
 }
 nav .brand { display: flex; align-items: center; gap: 10px; color: var(--purple); font-weight: 700; text-decoration: none; }
-nav .brand svg { width: 24px; height: 24px; }
-nav .right { display: flex; align-items: center; gap: 20px; }
 nav .links { display: flex; gap: 20px; }
+nav .right { display: flex; align-items: baseline; gap: 20px; }
 nav a { color: var(--comment); text-decoration: none; }
 nav a:hover { color: var(--fg); }
 
@@ -55,10 +54,6 @@ h1 { font-size: 64px; font-weight: 700; margin-bottom: 16px; }
 .tagline { font-size: 18px; color: var(--fg); max-width: 540px; }
 .tagline .accent { color: var(--purple); }
 
-.hero { display: flex; gap: 48px; align-items: center; }
-.hero-text { flex: 1; }
-.hero .waffle-hero { width: 260px; height: 260px; flex: none; }
-
 .projects { margin-top: 72px; }
 .projects h2 { font-size: 14px; color: var(--comment); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 16px; }
 .projects .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
@@ -72,16 +67,13 @@ h1 { font-size: 64px; font-weight: 700; margin-bottom: 16px; }
 footer { border-top: 1px solid var(--cl); }
 footer .inner {
   max-width: 1240px; margin: 0 auto; width: 100%;
-  display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;
-  align-items: center; font-size: 14px; padding: 24px 40px 40px;
+  display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+  font-size: 14px; padding: 24px 40px 40px;
 }
-footer .foot-left { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
-footer .mark { display: flex; align-items: center; gap: 8px; color: var(--comment); }
-footer .mark svg { width: 20px; height: 20px; }
+footer .copy { color: var(--comment); }
 footer .links { display: flex; gap: 20px; flex-wrap: wrap; }
 footer a { color: var(--comment); text-decoration: none; }
 footer a:hover { color: var(--purple); }
-footer .copy { color: var(--comment); }
 
 .page h1 { font-size: 48px; }
 .section-title { font-size: 14px; color: var(--comment); text-transform: uppercase; letter-spacing: .12em; margin: 48px 0 8px; }
@@ -120,7 +112,6 @@ html[data-theme='light'] .cta-primary { color: #fff; }
   nav .inner { flex-wrap: wrap; padding: 20px 24px; }
   footer .inner { padding: 20px 24px 32px; }
   h1 { font-size: 44px; }
-  .hero { flex-direction: column; align-items: flex-start; }
   .projects .grid { grid-template-columns: 1fr; }
   .features { grid-template-columns: 1fr; }
 }
