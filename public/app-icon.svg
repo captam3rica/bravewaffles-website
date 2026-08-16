@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#FAF7EE"/>
+      <stop offset="100%" stop-color="#EDE6D2"/>
+    </linearGradient>
+    <linearGradient id="hl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.05"/>
+    </linearGradient>
+    <clipPath id="squircle">
+      <rect x="0" y="0" width="1024" height="1024" rx="229" ry="229"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#squircle)">
+    <rect width="1024" height="1024" fill="url(#tile)"/>
+    <rect width="1024" height="1024" fill="url(#hl)"/>
+    <g stroke="#2A2724" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <line x1="296" y1="385" x2="728" y2="385" stroke-width="26.7" stroke-opacity="0.18"/>
+      <line x1="296" y1="512" x2="728" y2="512" stroke-width="26.7" stroke-opacity="0.18"/>
+      <line x1="296" y1="639" x2="728" y2="639" stroke-width="44.5"/>
+    </g>
+    <g transform="translate(512 419) rotate(-45)">
+      <rect x="-36.7" y="-340" width="73.5" height="680" rx="23.5" ry="23.5" fill="#2A2724"/>
+    </g>
+    <circle cx="335.4" cy="639" r="14.2" fill="#2A2724"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1023" height="1023" rx="229" ry="229" fill="none" stroke="#000000" stroke-opacity="0.10" stroke-width="2.6"/>
+</svg>
