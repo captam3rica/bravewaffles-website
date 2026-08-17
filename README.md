@@ -1,4 +1,4 @@
-<img width="164" height="162" align="center" alt="bravewaffe_butter_icon" src="https://github.com/user-attachments/assets/3cdae26e-b318-47f4-891a-9ee607c603a0"/>
+<img width="250" height="250" alt="bravewaffle-black-hero" src="https://github.com/user-attachments/assets/b7d5eb8f-e45e-40b4-9d0e-fd43d2bd6e26" />
 
 # Bravewaffles Website
 
