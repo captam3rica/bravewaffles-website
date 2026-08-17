@@ -10,7 +10,7 @@ export const APP_STORE_IOS_URL = '#ios-app-store';
 
 export const PRODUCT_NAME = 'Consistent Notes';
 export const PRODUCT_TAGLINE =
-  "There when you need it, and tucked away when you don't.";
+  "There when you need it, and tucked away in the menu bar when you don't.";
 export const PRICE_MONTHLY = '$1.99';
 export const PRICE_YEARLY = '$19.99';
 export const TRIAL_NOTE = '14-day free trial';
