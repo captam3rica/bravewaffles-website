@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import AppStoreBadge from '../components/AppStoreBadge.astro';
 import {
   APP_STORE_MAC_URL, APP_STORE_IOS_URL, PRODUCT_NAME, PRODUCT_TAGLINE,
   PRICE_MONTHLY, PRICE_YEARLY, TRIAL_NOTE,
@@ -9,11 +10,11 @@ const features = [
   { name: 'Streaks & heatmaps', body: 'Build a daily habit with streaks and a full-year heatmap view.' },
   { name: 'ToDos that roll over', body: 'Hierarchical todos, cross-day rollover, and cascade checking.' },
   { name: 'Markdown editor', body: 'Syntax highlighting, auto-pairing, smart Home/End, and checkbox cascade.' },
-  { name: 'Vim support', body: 'Modal editing with j/k motions everywhere, find bar, and hardcore mode.' },
-  { name: 'Keyboard-first', body: 'Open it from anywhere, navigate every view effortlessly, and hold ⌘ to see shortcuts.' },
+  { name: 'Vim support', body: 'Move and editing with Vim motions everywhere, visual line movement, and hardcore mode.' },
+  { name: 'Keyboard-first', body: 'Open it from anywhere, navigation and editing at your fingertips, and hold Cmd to see shortcuts.' },
   { name: 'Daily reminders', body: 'A gentle nudge via notifications when you want it.' },
   { name: '27 themes', body: 'Dracula, Solarized, Nord, Gruvbox, Monokai, and more.' },
-  { name: 'Full-text search', body: 'Instant search across every note (Cmd+Shift+F).' },
+  { name: 'Full notes search', body: 'Instant search across every note (Cmd+Shift+F).' },
   { name: 'Markdown in, markdown out', body: 'Every note saves automatically as a dated .md file in a folder you choose. Import your own by naming a file for the date and dropping it in to fill an empty day.' },
 ];
 ---
@@ -27,8 +28,8 @@ const features = [
       <img class="app-icon" src="/app-icon.svg" width="128" height="128" alt="Consistent Notes app icon" />
     </div>
     <div class="cta-row">
-      <a class="cta cta-primary" href={APP_STORE_MAC_URL}>Get the app for macOS</a>
-      <a class="cta cta-secondary" href={APP_STORE_IOS_URL}>Get the app for iOS</a>
+      <AppStoreBadge platform="mac" href={APP_STORE_MAC_URL} />
+      <AppStoreBadge platform="ios" href={APP_STORE_IOS_URL} />
     </div>
 
     <h2 class="section-title">Preview</h2>
