@@ -4,25 +4,65 @@ import Base from '../layouts/Base.astro';
 <Base title="Privacy Policy — Bravewaffles">
   <main class="prose">
     <h1>Privacy Policy</h1>
-    <p>Last updated: <strong>August 16, 2026</strong></p>
+    <p>Last updated: <strong>August 20, 2026</strong></p>
 
-    <h2>1. What We Collect</h2>
+    <p>This policy describes how Bravewaffles, LLC ("we", "us") handles data in <strong>Consistent Notes</strong>, our macOS journaling app, and on <strong>bravewaffles.io</strong>. The short version: your notes stay on your Mac, we don't collect your data, and we can't read anything you write.</p>
+
+    <h2>1. What the App Stores on Your Mac</h2>
+    <p>Consistent Notes keeps everything on your device:</p>
     <ul>
-      <li><strong>Notes you write:</strong> stored on your device and synced through iCloud using Apple's CloudKit. We cannot read your notes.</li>
-      <li><strong>Purchase information:</strong> processed entirely by Apple through the App Store. We do not collect payment details.</li>
-      <li><strong>Usage data:</strong> this website does not use third-party analytics or tracking scripts.</li>
+      <li><strong>Your notes and ToDos:</strong> stored in a local database inside the app's sandboxed container on your Mac. Nothing you write is ever sent off your device.</li>
+      <li><strong>Markdown copies:</strong> each note is also saved automatically as a dated <code>.md</code> file in a folder on your Mac — <code>Documents/Consistent Notes</code> by default, or any folder you choose.</li>
+      <li><strong>Your preferences:</strong> theme, reminders, editor settings, and the notes folder location are stored locally on your Mac.</li>
+      <li><strong>Local logs:</strong> basic diagnostic logging stays on your Mac within macOS's unified logging system.</li>
     </ul>
 
-    <h2>2. How Your Notes Are Stored</h2>
-    <p>Notes live in your app's local storage and in your personal iCloud account. iCloud is governed by Apple's privacy policy and your Apple account settings.</p>
+    <h2>2. What We Never Do</h2>
+    <ul>
+      <li>No accounts — the app has no sign-in of any kind.</li>
+      <li>No analytics, telemetry, or crash reporting.</li>
+      <li>No advertising or tracking.</li>
+      <li>No cloud sync — your notes exist only on your Mac (device sync is on our roadmap, and if it ships, this policy will say so before it does).</li>
+      <li>No access to your notes — we cannot read, recover, or hand over what you write, because we never receive it.</li>
+    </ul>
 
-    <h2>3. What We Never Do</h2>
-    <p>We do not sell your data. We do not run advertising. We do not access your notes or device data.</p>
+    <h2>3. Purchases</h2>
+    <p>Subscriptions are processed entirely by Apple through the App Store. We never see your payment details. Purchase and subscription status is verified on your Mac from Apple's signed transactions — we don't run a separate server, and we don't store your transaction history. You can view, change, or cancel a subscription anytime in your <a href="https://apps.apple.com/account/subscriptions" rel="noopener">App Store account settings</a>.</p>
 
-    <h2>4. Third-Party Services</h2>
-    <p>The only third party involved in the Service is Apple (App Store purchase processing and iCloud/CloudKit sync).</p>
+    <h2>4. Reminders</h2>
+    <p>The daily reminder is a local notification scheduled on your Mac at a time you choose. Notification content contains none of your writing. You can turn reminders off in the app or in macOS notification settings.</p>
 
-    <h2>5. Contact</h2>
-    <p>Privacy questions: <a href="mailto:support@bravewaffles.io">support@bravewaffles.io</a>.</p>
+    <h2>5. This Website</h2>
+    <p>bravewaffles.io is a static website. It uses no analytics, no cookies, and no tracking scripts, and it doesn't ask for any personal information.</p>
+
+    <h2>6. Third Parties</h2>
+    <p>The only third parties involved are:</p>
+    <ul>
+      <li><strong>Apple</strong> — App Store purchases and subscriptions, governed by <a href="https://www.apple.com/legal/privacy/en-ww/" rel="noopener">Apple's privacy policy</a>.</li>
+      <li><strong>GitHub</strong> — hosts this website, governed by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener">GitHub's privacy statement</a>.</li>
+      <li><strong>Microsoft</strong> — hosts our email. If you contact <a href="mailto:support@bravewaffles.io">support@bravewaffles.io</a>, Microsoft processes that email under <a href="https://privacy.microsoft.com/en-us/privacystatement" rel="noopener">Microsoft's privacy statement</a>.</li>
+    </ul>
+    <p>We don't share your data with anyone else, because we don't have it. Any party that ever receives data through the app or this website will be required to protect it no less carefully than this policy describes.</p>
+
+    <h2>7. Retention and Deletion</h2>
+    <p>Your data lives on your Mac, and you control it:</p>
+    <ul>
+      <li><strong>Notes, ToDos, and settings:</strong> kept on your Mac until you delete them. Deleting the app removes its database and settings.</li>
+      <li><strong>Markdown files:</strong> the <code>.md</code> files in your notes folder are yours — they stay until you delete them, with or without the app.</li>
+      <li><strong>Emails:</strong> if you email us, we keep the conversation only as long as needed, and delete it on request.</li>
+      <li><strong>Purchases:</strong> we retain nothing; your purchase history lives in your Apple account, under your control.</li>
+    </ul>
+
+    <h2>8. Your Choices</h2>
+    <p>Because everything is local, most controls are already in your hands: choose your notes folder in the app's settings, turn reminders on or off, and delete notes or the app itself whenever you like. To ask us to delete anything we might hold (which is essentially only support emails), contact us below.</p>
+
+    <h2>9. Children</h2>
+    <p>Consistent Notes is a general-audience journaling tool. We don't knowingly collect personal information from children, and since the app collects nothing, there's nothing for a child to disclose to us.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>If we change this policy, we'll post the updated version here with a new "Last updated" date. For changes that materially affect how your data is handled — for example, if we ever add optional iCloud sync — we'll say so prominently on this page and in the app before it takes effect.</p>
+
+    <h2>11. Contact</h2>
+    <p>Privacy questions or deletion requests: <a href="mailto:support@bravewaffles.io">support@bravewaffles.io</a>.</p>
   </main>
 </Base>

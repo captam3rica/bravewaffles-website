@@ -1,21 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
 import AppStoreBadge from '../components/AppStoreBadge.astro';
+import FeatureIcon from '../components/FeatureIcon.astro';
 import {
   APP_STORE_MAC_URL, APP_STORE_IOS_URL, PRODUCT_NAME, PRODUCT_TAGLINE,
   PRICE_MONTHLY, PRICE_YEARLY, TRIAL_NOTE,
 } from '../lib/site';
 
 const features = [
-  { name: 'Streaks & heatmaps', body: 'Build a daily habit with streaks and a full-year heatmap view.' },
-  { name: 'ToDos that roll over', body: 'Hierarchical todos, cross-day rollover, and cascade checking.' },
-  { name: 'Markdown editor', body: 'Syntax highlighting, auto-pairing, smart Home/End, and checkbox cascade.' },
-  { name: 'Vim support', body: 'Move and editing with Vim motions everywhere, visual line movement, and hardcore mode.' },
-  { name: 'Keyboard-first', body: 'Open it from anywhere, navigation and editing at your fingertips, and hold Cmd to see shortcuts.' },
-  { name: 'Daily reminders', body: 'A gentle nudge via notifications when you want it.' },
-  { name: '27 themes', body: 'Dracula, Solarized, Nord, Gruvbox, Monokai, and more.' },
-  { name: 'Full notes search', body: 'Instant search across every note (Cmd+Shift+F).' },
-  { name: 'Markdown in, markdown out', body: 'Every note saves automatically as a dated .md file in a folder you choose. Import your own by naming a file for the date and dropping it in to fill an empty day.' },
+  { icon: 'keyboard', name: 'Keyboard-first', body: 'Open it from anywhere, navigation and editing at your fingertips, hold Cmd to see shortcuts.' },
+  { icon: 'pencil', name: 'Markdown editor', body: 'Syntax highlighting, auto-pairing, smart Home/End, and checkbox cascade.' },
+  { icon: 'checklist', name: 'ToDos that roll over', body: 'Hierarchical todos, cross-day rollover, and cascade checking.' },
+  { icon: 'flame', name: 'Streaks & heatmaps', body: 'Build a daily habit with streaks and a full-year heatmap view.' },
+  { icon: 'command', name: 'Vim support', body: 'Move and editing with Vim motions everywhere, visual line movement, and hardcore mode.' },
+  { icon: 'bell', name: 'Daily reminders', body: 'A gentle nudge via notifications when you want it.' },
+  { icon: 'palette', name: '27 themes', body: 'Dracula, Solarized, Nord, Gruvbox, Monokai, and more.' },
+  { icon: 'search', name: 'Search all notes', body: 'Instant search across every note (Cmd+Shift+F).' },
+  { icon: 'document', name: 'Markdown export', body: 'Every note saves automatically as a dated .md file.' },
 ];
 ---
 <Base title={`${PRODUCT_NAME} — a macOS menu bar journaling app`}>
@@ -29,21 +30,24 @@ const features = [
     </div>
     <div class="cta-row">
       <AppStoreBadge platform="mac" href={APP_STORE_MAC_URL} />
-      <AppStoreBadge platform="ios" href={APP_STORE_IOS_URL} />
+      <AppStoreBadge platform="ios" href={APP_STORE_IOS_URL} comingSoon />
     </div>
 
     <h2 class="section-title">Preview</h2>
     <div class="shots-grid">
       <figure class="shot">
-        <img src="/screenshots/editor-view.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes editor view" />
+        <img class="shot-dark" src="/screenshots/editor-view-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes editor view" />
+        <img class="shot-light" src="/screenshots/editor-view-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes editor view" />
         <figcaption>Editor view</figcaption>
       </figure>
       <figure class="shot">
-        <img src="/screenshots/notes-list.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes notes list" />
+        <img class="shot-dark" src="/screenshots/notes-list-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes notes list" />
+        <img class="shot-light" src="/screenshots/notes-list-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes notes list" />
         <figcaption>Notes list</figcaption>
       </figure>
       <figure class="shot">
-        <img src="/screenshots/year-view.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes year heatmap view" />
+        <img class="shot-dark" src="/screenshots/year-view-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes year heatmap view" />
+        <img class="shot-light" src="/screenshots/year-view-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes year heatmap view" />
         <figcaption>Year view</figcaption>
       </figure>
     </div>
@@ -52,7 +56,7 @@ const features = [
     <div class="features">
       {features.map((f) => (
         <div class="feature">
-          <h3>{f.name}</h3>
+          <h3><FeatureIcon icon={f.icon} />{f.name}</h3>
           <p>{f.body}</p>
         </div>
       ))}
@@ -73,7 +77,7 @@ const features = [
       </div>
     </div>
 
-    <h2 class="section-title">Sync</h2>
-    <p class="prose">Your notes live in the menu bar and sync between your Mac and iPhone over iCloud. See our <a href="/terms">Terms</a> and <a href="/privacy">Privacy Policy</a>.</p>
+    <h2 class="section-title">Sync <span class="coming-soon-pill">Coming soon</span></h2>
+    <p class="prose">Your notes live in the menu bar and sync between your Mac and iPhone over iCloud.</p>
   </main>
 </Base>
