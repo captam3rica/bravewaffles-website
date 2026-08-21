@@ -1,0 +1,43 @@
+---
+import macBadge from '../assets/badges/mac.svg?raw';
+import iosBadge from '../assets/badges/ios.svg?raw';
+
+interface Props {
+  platform: 'mac' | 'ios';
+  href: string;
+  comingSoon?: boolean;
+}
+const { platform, href, comingSoon = false } = Astro.props;
+const badge = platform === 'mac' ? macBadge : iosBadge;
+const label = platform === 'mac' ? 'Download on the Mac App Store' : 'Download on the App Store';
+---
+
+{comingSoon ? (
+  <span class="store-badge-wrapper">
+    <span class="store-badge coming-soon" aria-label={`${label} — coming soon`} set:html={badge} />
+    <span class="coming-soon-pill">Coming soon</span>
+  </span>
+) : (
+  <a class="store-badge" href={href} aria-label={label} set:html={badge} />
+)}
+
+<style>
+  .store-badge {
+    display: inline-block;
+    line-height: 0;
+    border-radius: 8px;
+  }
+  .store-badge :global(svg) { display: block; height: 52px; width: auto; }
+  /* Default: black badge with white text (as shipped by Apple) */
+  .store-badge :global(path:not([style])) { fill: #000; transition: fill 0.15s ease; }
+  /* Hover: Dracula purple background, text/logo stay white */
+  .store-badge:hover :global(path:not([style])) { fill: var(--purple); }
+
+  .store-badge-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .store-badge.coming-soon { opacity: 0.7; }
+</style>
