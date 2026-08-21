@@ -1,0 +1,17 @@
+---
+interface Props {
+  headings: { depth: number; slug: string; text: string }[];
+}
+const { headings } = Astro.props;
+---
+
+{headings.length > 0 && (
+  <aside class="docs-rail" aria-label="On this page">
+    <h3>On this page</h3>
+    <ul>
+      {headings.map((h) => (
+        <li><a href={`#${h.slug}`} data-rail-link>{h.text}</a></li>
+      ))}
+    </ul>
+  </aside>
+)}

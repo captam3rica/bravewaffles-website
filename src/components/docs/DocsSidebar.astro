@@ -1,0 +1,29 @@
+---
+import { DOC_NAV } from '../../lib/docs-nav';
+
+interface Props {
+  currentPath: string;
+  navHref: (slug: string) => string;
+}
+const { currentPath, navHref } = Astro.props;
+---
+
+<aside class="docs-sidebar">
+  <nav aria-label="Docs">
+    {DOC_NAV.map((g) => (
+      <div class="docs-nav-group">
+        <h3>{g.group}</h3>
+        <ul>
+          {g.items.map((item) => (
+            <li>
+              <a
+                href={navHref(item.slug)}
+                aria-current={navHref(item.slug) === currentPath ? 'page' : undefined}
+              >{item.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </nav>
+</aside>

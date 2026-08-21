@@ -1,0 +1,24 @@
+---
+interface Props {
+  prev?: { href: string; label: string };
+  next?: { href: string; label: string };
+}
+const { prev, next } = Astro.props;
+---
+
+{(prev || next) && (
+  <nav class="docs-pager" aria-label="Pager">
+    {prev && (
+      <a class="prev" href={prev.href}>
+        <span class="docs-pager-label">Previous</span>
+        <span class="docs-pager-title">← {prev.label}</span>
+      </a>
+    )}
+    {next && (
+      <a class="next" href={next.href}>
+        <span class="docs-pager-label">Next</span>
+        <span class="docs-pager-title">{next.label} →</span>
+      </a>
+    )}
+  </nav>
+)}
