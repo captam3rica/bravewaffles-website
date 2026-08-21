@@ -1,0 +1,56 @@
+---
+import '../styles/docs.css';
+import Base from './Base.astro';
+import DocsSidebar from '../components/docs/DocsSidebar.astro';
+import DocsOnThisPage from '../components/docs/DocsOnThisPage.astro';
+import DocsSearch from '../components/docs/DocsSearch.astro';
+import DocsPreviousNext from '../components/docs/DocsPreviousNext.astro';
+import { DOC_NAV } from '../lib/docs-nav';
+
+interface Props {
+  frontmatter: { title: string; description?: string };
+  slug: string; // '' for the index
+  headings: { depth: number; slug: string; text: string }[];
+}
+
+const { frontmatter, slug, headings } = Astro.props;
+const currentPath = slug ? `/consistent-notes/docs/${slug}/` : '/consistent-notes/docs/';
+
+// Uniform hrefs — every nav item points at its own page; the index is a
+// separate landing and appears in no nav group, so it gets no pager either.
+function navHref(s: string): string {
+  return `/consistent-notes/docs/${s}/`;
+}
+
+const flat = DOC_NAV.flatMap((g) => g.items);
+const idx = flat.findIndex((i) => navHref(i.slug) === currentPath);
+const prevNav = idx > 0 ? flat[idx - 1] : undefined;
+const nextNav = idx >= 0 && idx < flat.length - 1 ? flat[idx + 1] : undefined;
+const railHeadings = headings.filter((h) => h.depth === 2);
+
+const baseDescription =
+  frontmatter.description ||
+  `Consistent Notes documentation — ${frontmatter.title}. A macOS menu bar journaling app by Bravewaffles.`;
+---
+
+<Base title={`${frontmatter.title} — Consistent Notes Docs`} description={baseDescription}>
+  <div class="docs-grid">
+    <DocsSidebar currentPath={currentPath} navHref={navHref} />
+    <div class="docs-main">
+      <DocsSearch />
+      <p class="docs-eyebrow">Docs</p>
+      <h1 class="docs-title">{frontmatter.title}</h1>
+      {frontmatter.description && <p class="docs-lede">{frontmatter.description}</p>}
+      <div class="docs-prose">
+        <slot />
+      </div>
+      {(prevNav || nextNav) && (
+        <DocsPreviousNext
+          prev={prevNav ? { href: navHref(prevNav.slug), label: prevNav.title } : undefined}
+          next={nextNav ? { href: navHref(nextNav.slug), label: nextNav.title } : undefined}
+        />
+      )}
+    </div>
+    <DocsOnThisPage headings={railHeadings} />
+  </div>
+</Base>
