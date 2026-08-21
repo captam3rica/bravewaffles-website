@@ -11,10 +11,10 @@ import Base from '../layouts/Base.astro';
     <h2>1. What the App Stores on Your Mac</h2>
     <p>Consistent Notes keeps everything on your device:</p>
     <ul>
-      <li><strong>Your notes and ToDos:</strong> stored in a local database inside the app's sandboxed container on your Mac. Nothing you write is ever sent off your device.</li>
-      <li><strong>Markdown copies:</strong> each note is also saved automatically as a dated <code>.md</code> file in a folder on your Mac — <code>Documents/Consistent Notes</code> by default, or any folder you choose.</li>
-      <li><strong>Your preferences:</strong> theme, reminders, editor settings, and the notes folder location are stored locally on your Mac.</li>
-      <li><strong>Local logs:</strong> basic diagnostic logging stays on your Mac within macOS's unified logging system.</li>
+      <li><strong>Your notes and ToDos:</strong> stored in a local database inside the app's sandboxed container.</li>
+      <li><strong>Markdown copies:</strong> each note is also saved automatically as a dated <code>.md</code> file. By default these live inside the app's sandboxed container — you can choose any folder on your Mac in the app's settings, which is where we recommend keeping them.</li>
+      <li><strong>Your preferences:</strong> theme, reminders, editor settings, and the notes folder location, stored locally.</li>
+      <li><strong>Local logs:</strong> the app writes minimal diagnostic logs to your Mac's unified logging system. These contain only technical metadata (counts, dates, settings) — never your notes, ToDos, search text, or keystrokes.</li>
     </ul>
 
     <h2>2. What We Never Do</h2>
@@ -22,7 +22,7 @@ import Base from '../layouts/Base.astro';
       <li>No accounts — the app has no sign-in of any kind.</li>
       <li>No analytics, telemetry, or crash reporting.</li>
       <li>No advertising or tracking.</li>
-      <li>No cloud sync — your notes exist only on your Mac (device sync is on our roadmap, and if it ships, this policy will say so before it does).</li>
+      <li>No cloud sync — if that ever changes, this policy will be updated first (see Changes below).</li>
       <li>No access to your notes — we cannot read, recover, or hand over what you write, because we never receive it.</li>
     </ul>
 
@@ -45,16 +45,16 @@ import Base from '../layouts/Base.astro';
     <p>We don't share your data with anyone else, because we don't have it. Any party that ever receives data through the app or this website will be required to protect it no less carefully than this policy describes.</p>
 
     <h2>7. Retention and Deletion</h2>
-    <p>Your data lives on your Mac, and you control it:</p>
+    <p>You're in control:</p>
     <ul>
-      <li><strong>Notes, ToDos, and settings:</strong> kept on your Mac until you delete them. Deleting the app removes its database and settings.</li>
-      <li><strong>Markdown files:</strong> the <code>.md</code> files in your notes folder are yours — they stay until you delete them, with or without the app.</li>
+      <li><strong>Notes, ToDos, and settings:</strong> kept on your Mac until you delete them. They live in the app's sandboxed storage (<code>~/Library/Containers/io.bravewaffles.consistency</code>) — note that deleting the app itself may leave this data behind, so remove that folder too if you want everything gone.</li>
+      <li><strong>Markdown files:</strong> if you've chosen your own notes folder, the <code>.md</code> files there are yours — they stay until you delete them, with or without the app. If you're still using the default location, they live inside the app's sandboxed container along with your notes.</li>
       <li><strong>Emails:</strong> if you email us, we keep the conversation only as long as needed, and delete it on request.</li>
-      <li><strong>Purchases:</strong> we retain nothing; your purchase history lives in your Apple account, under your control.</li>
+      <li><strong>Purchases:</strong> we retain nothing; your purchase history lives in your Apple account.</li>
     </ul>
 
     <h2>8. Your Choices</h2>
-    <p>Because everything is local, most controls are already in your hands: choose your notes folder in the app's settings, turn reminders on or off, and delete notes or the app itself whenever you like. To ask us to delete anything we might hold (which is essentially only support emails), contact us below.</p>
+    <p>Because everything is local, most controls are already in your hands: choose your notes folder in the app's settings, turn reminders on or off, and delete notes or the app itself whenever you like.</p>
 
     <h2>9. Children</h2>
     <p>Consistent Notes is a general-audience journaling tool. We don't knowingly collect personal information from children, and since the app collects nothing, there's nothing for a child to disclose to us.</p>

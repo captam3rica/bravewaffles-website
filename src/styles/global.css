@@ -32,6 +32,15 @@ nav .inner {
   padding: 28px 40px; font-size: 14px;
 }
 nav .brand { display: flex; align-items: center; gap: 10px; color: var(--purple); font-weight: 700; text-decoration: none; }
+nav .brand-cursor {
+  display: inline-block; width: 0.55em; height: 1.05em; margin-left: 5px;
+  background: var(--purple); vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  nav .brand-cursor { animation: none; }
+}
 nav .brand-waffle { width: 24px; height: 24px; flex: none; }
 html[data-theme='light'] .brand-waffle-white { display: none; }
 html[data-theme='dark'] .brand-waffle-black { display: none; }
