@@ -37,6 +37,9 @@ const baseDescription =
   <div class="docs-grid">
     <DocsSidebar currentPath={currentPath} navHref={navHref} />
     <div class="docs-main">
+      <div class="docs-mobile-bar">
+        <button id="docs-menu-open" class="docs-menu-btn" type="button">☰ Docs</button>
+      </div>
       <DocsSearch />
       <p class="docs-eyebrow">Docs</p>
       <h1 class="docs-title">{frontmatter.title}</h1>
@@ -53,4 +56,41 @@ const baseDescription =
     </div>
     <DocsOnThisPage headings={railHeadings} />
   </div>
+
+  <div class="docs-drawer" id="docs-drawer" data-open="false">
+    <div class="docs-drawer-backdrop" data-drawer-close></div>
+    <div class="docs-drawer-panel">
+      <nav aria-label="Docs">
+        {DOC_NAV.map((g) => (
+          <details open={g.group === 'Getting started' || undefined}>
+            <summary>{g.group}</summary>
+            <div class="docs-nav-group">
+              <ul>
+                {g.items.map((item) => (
+                  <li>
+                    <a
+                      href={navHref(item.slug)}
+                      aria-current={navHref(item.slug) === currentPath ? 'page' : undefined}
+                    >{item.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </details>
+        ))}
+      </nav>
+    </div>
+  </div>
 </Base>
+
+<script>
+  const openBtn = document.getElementById('docs-menu-open');
+  const drawer = document.getElementById('docs-drawer');
+  drawer?.querySelectorAll('[data-drawer-close]').forEach((el) =>
+    el.addEventListener('click', () => drawer.setAttribute('data-open', 'false')),
+  );
+  drawer?.querySelectorAll('a').forEach((a) =>
+    a.addEventListener('click', () => drawer?.setAttribute('data-open', 'false')),
+  );
+  openBtn?.addEventListener('click', () => drawer?.setAttribute('data-open', 'true'));
+</script>

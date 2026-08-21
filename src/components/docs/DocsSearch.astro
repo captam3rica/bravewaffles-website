@@ -1,2 +1,19 @@
 ---
 ---
+
+<button id="docs-search-open" class="docs-search-btn" type="button">
+  <span>Search the Docs</span>
+  <span class="kbd">⌘K</span>
+</button>
+
+<dialog id="docs-search-dialog" class="docs-search-dialog">
+  <div class="docs-search-box">
+    <input id="docs-search-input" type="text" placeholder="Search the Docs…" autocomplete="off" />
+    <div id="docs-search-results" class="docs-search-results"></div>
+  </div>
+</dialog>
+
+<script>
+  import { initSearch } from '../../lib/docs-search';
+  initSearch();
+</script>

@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npx -y pagefind --site dist --glob 'consistent-notes/docs/**/*.html'",
     "preview": "astro preview",
     "check": "astro check",
     "test": "NODE_OPTIONS=--no-experimental-webstorage vitest run"
