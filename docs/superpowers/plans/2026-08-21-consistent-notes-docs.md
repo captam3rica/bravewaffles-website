@@ -1568,7 +1568,7 @@ git commit -m "feat(docs): reference pages"
 
 - [ ] **Step 1: `where-your-notes-live.md`**
 
-```markdown
+````markdown
 ---
 title: Where your entries live
 description: Your journal is plain Markdown files on your Mac — nothing hidden, nothing locked in.
@@ -1610,7 +1610,7 @@ The files are ordinary Markdown. Open them in any editor, back them up with any 
 ## Bringing files back in
 
 **Settings → Data → Rescan** (under Recovery) reads the folder and imports any `YYYY-MM-DD.md` files for dates that don't yet have an entry in the app — useful after restoring from a backup or moving between Macs. Existing entries with content are never overwritten; renamed files aren't picked up.
-```
+````
 
 - [ ] **Step 2: `markdown-export.md`**
 

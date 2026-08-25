@@ -1,4 +1,4 @@
-export const SITE_NAME = 'Bravewaffles';
+export const SITE_NAME = 'Brave Waffles';
 export const SITE_DOMAIN = 'https://bravewaffles.io';
 export const BLOG_URL = 'https://blog.bravewaffles.io';
 export const GITHUB_URL = 'https://github.com/captam3rica';
