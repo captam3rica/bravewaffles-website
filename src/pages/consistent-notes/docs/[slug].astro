@@ -5,7 +5,7 @@ import DocsLayout from '../../../layouts/DocsLayout.astro';
 export async function getStaticPaths() {
   const entries = await getCollection('docs');
   return entries.map((e) => ({
-    params: { slug: e.id.replace(/\.md$/, '') },
+    params: { slug: e.id },
     props: { entry: e },
   }));
 }
@@ -14,6 +14,6 @@ const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
 ---
 
-<DocsLayout frontmatter={entry.data} slug={entry.id.replace(/\.md$/, '')} headings={headings}>
+<DocsLayout frontmatter={entry.data} slug={entry.id} headings={headings}>
   <Content />
 </DocsLayout>
