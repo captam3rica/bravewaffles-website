@@ -26,5 +26,6 @@ describe('docs nav', () => {
     expect(prevNext('writing-notes').prev?.slug).toBe('quickstart');
     expect(prevNext('install-and-setup').prev).toBeUndefined();
     expect(prevNext('changelog').next).toBeUndefined();
+    expect(prevNext('nope')).toEqual({});
   });
 });

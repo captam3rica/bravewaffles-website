@@ -31,9 +31,11 @@ const railHeadings = headings.filter((h) => h.depth === 2);
 const baseDescription =
   frontmatter.description ||
   `Consistent Notes documentation — ${frontmatter.title}. A macOS menu bar journaling app by Bravewaffles.`;
+
+const pageTitle = slug ? `${frontmatter.title} — Consistent Notes Docs` : frontmatter.title;
 ---
 
-<Base title={`${frontmatter.title} — Consistent Notes Docs`} description={baseDescription}>
+<Base title={pageTitle} description={baseDescription}>
   <div class="docs-grid">
     <DocsSidebar currentPath={currentPath} navHref={navHref} />
     <div class="docs-main">
