@@ -24,7 +24,7 @@ Open Settings with **⌘,** or from the gear menu. Four tabs: General, Shortcuts
 
 **Themes** — all 27 themes with a live preview. See [Themes](/consistent-notes/docs/themes/).
 
-**View** — Hide tab bar (view switching stays on **⌘1/⌘2/⌘3**); More vertical space (a taller popover).
+**View** — Hide tab bar (view switching stays on **⌘N/⌘Y/⌘T**); More vertical space (a taller popover).
 
 **Vim Mode** — the two vim toggles, visual-line movement, escape sequence, indicator, and hardcore mode. See [Vim mode](/consistent-notes/docs/vim-mode/).
 

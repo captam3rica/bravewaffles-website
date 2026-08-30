@@ -19,7 +19,7 @@ Hold **⌘** for three-quarters of a second, anywhere in the app, and the shortc
 | **⏎** | Open the selected day |
 | **↑ / ↓** | Move between days |
 | **⌘↑ / ⌘↓** | Top of list / start of month |
-| **⌘1 / ⌘2 / ⌘3** | Notes / Heatmap / ToDos |
+| **⌘N / ⌘Y / ⌘T** | Notes / Heatmap / ToDos |
 | **⌘⇧F** | Search every entry |
 | **⌘,** | Settings |
 | Hold **⌘** | Shortcuts overlay |
