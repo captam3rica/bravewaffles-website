@@ -5,7 +5,7 @@
   </p>
 </h1>
 <p align="center">
-  This repository contains the entire source for [bravewaffles.io](https://bravewaffles.io). 
+  This repository contains the entire source for <a href="https://bravewaffles.io">bravewaffles.io</a>. 
 </p>
 
 
