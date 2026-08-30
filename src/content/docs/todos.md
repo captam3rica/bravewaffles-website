@@ -21,7 +21,7 @@ Indent a todo with **⇥** (four spaces per level) to nest it under the one abov
 
 ## The ToDos tab
 
-The ToDos tab (**⌘3**) gathers every open todo across every entry, deduplicated and nested under its parents, with the date it was added to each. Checking a todo from this tab checks it in the entry where it lives. When it's empty: all caught up.
+The ToDos tab (**⌘T**) gathers every open todo across every entry, deduplicated and nested under its parents, with the date it was added to each. Checking a todo from this tab checks it in the entry where it lives. When it's empty: all caught up.
 
 ## Rollover — carrying todos forward
 
