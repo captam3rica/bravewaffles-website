@@ -7,6 +7,15 @@ const entries = await getCollection('docs');
 const bySlug = (s: string) => entries.find((e) => e.id === s);
 const gettingStarted = ['install-and-setup', 'quickstart'].map(bySlug).filter((e) => e !== undefined);
 const everyday = ['writing-notes', 'todos', 'streaks-heatmaps', 'search', 'keyboard-shortcuts'].map(bySlug).filter((e) => e !== undefined);
+const iconFor: Record<string, string> = {
+  'install-and-setup': 'install',
+  quickstart: 'play',
+  'writing-notes': 'pencil',
+  todos: 'checklist',
+  'streaks-heatmaps': 'flame',
+  search: 'search',
+  'keyboard-shortcuts': 'keyboard',
+};
 ---
 
 <DocsLayout frontmatter={{ title: 'Consistent Notes Docs' }} slug="" headings={[]}>
@@ -16,11 +25,11 @@ const everyday = ['writing-notes', 'todos', 'streaks-heatmaps', 'search', 'keybo
   </p>
   <h2>Start here</h2>
   <div class="docs-card-grid">
-    {gettingStarted.map((e) => <DocsPageCard href={`/consistent-notes/docs/${e.id}/`} title={e.data.title} description={e.data.description} />)}
+    {gettingStarted.map((e) => <DocsPageCard href={`/consistent-notes/docs/${e.id}/`} title={e.data.title} description={e.data.description} icon={iconFor[e.id]} />)}
   </div>
   <h2>Everyday pages</h2>
   <div class="docs-card-grid">
-    {everyday.map((e) => <DocsPageCard href={`/consistent-notes/docs/${e.id}/`} title={e.data.title} description={e.data.description} />)}
+    {everyday.map((e) => <DocsPageCard href={`/consistent-notes/docs/${e.id}/`} title={e.data.title} description={e.data.description} icon={iconFor[e.id]} />)}
   </div>
   <h2>Browse everything</h2>
   <p>Use the navigation on the left, or press <kbd>⌘K</kbd> to search the Docs.</p>

@@ -47,7 +47,6 @@ export const DOC_NAV: DocsNavGroup[] = [
     items: [
       { slug: 'where-your-notes-live', title: 'Where your entries live' },
       { slug: 'markdown-export', title: 'Markdown export' },
-      { slug: 'sync', title: 'Sync' },
     ],
   },
   {
@@ -55,7 +54,6 @@ export const DOC_NAV: DocsNavGroup[] = [
     items: [
       { slug: 'troubleshooting', title: 'Troubleshooting' },
       { slug: 'contact-support', title: 'Contact support' },
-      { slug: 'changelog', title: 'Changelog' },
     ],
   },
 ];
