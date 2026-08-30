@@ -15,9 +15,9 @@ The heatmap's legend also shows your **longest streak** — the longest run of c
 
 ## The heatmap
 
-The Heatmap tab (**⌘2**) shows the whole current year, one row per month, scrollable top to bottom. Hover any day to preview its entry; click to open it. Today gets a dot.
+The Heatmap tab (**⌘Y**) shows the whole current year, one row per month, scrollable top to bottom. Hover any day to preview its entry; click to open it. Today gets a dot.
 
-**Darker days had more list items** (bullets and checkboxes) — a day with three bullets is darker than a day with one, and a day of paragraphs alone is bright. The scale runs from one list item up to nineteen and beyond; it's about the shape of your day, not the word count.
+**Darker days had more list items** (bullets and checkboxes) — a day with three bullets is darker than a day with one, and a day of paragraphs alone is bright. The scale runs from one list item up to thirty-three and beyond; it's about the shape of your day, not the word count.
 
 Why list items? They're the cleanest signal of "what I did today" — plans, checks, and notes to self all count — without turning the heatmap into a word-count contest.
 
