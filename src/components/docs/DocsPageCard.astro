@@ -1,13 +1,16 @@
 ---
+import FeatureIcon from '../FeatureIcon.astro';
+
 interface Props {
   href: string;
   title: string;
   description: string;
+  icon?: string;
 }
-const { href, title, description } = Astro.props;
+const { href, title, description, icon } = Astro.props;
 ---
 
 <a class="docs-card" href={href}>
-  <h3>{title}</h3>
+  <h3>{icon && <FeatureIcon icon={icon} />}{title}</h3>
   {description && <p>{description}</p>}
 </a>

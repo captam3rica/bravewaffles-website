@@ -2,17 +2,17 @@ import { describe, it, expect } from 'vitest';
 import { DOC_NAV, docSlugs, prevNext, slugToNavItem } from './docs-nav';
 
 describe('docs nav', () => {
-  it('has 6 groups and 19 visible pages', () => {
+  it('has 6 groups and 17 visible pages', () => {
     expect(DOC_NAV).toHaveLength(6);
     const pages = DOC_NAV.flatMap((g) => g.items);
-    expect(pages).toHaveLength(19);
+    expect(pages).toHaveLength(17);
   });
 
   it('slugs are unique and ordered', () => {
     const slugs = docSlugs();
-    expect(new Set(slugs).size).toBe(19);
+    expect(new Set(slugs).size).toBe(17);
     expect(slugs[0]).toBe('install-and-setup');
-    expect(slugs[slugs.length - 1]).toBe('changelog');
+    expect(slugs[slugs.length - 1]).toBe('contact-support');
   });
 
   it('maps a slug to its group', () => {
@@ -25,7 +25,7 @@ describe('docs nav', () => {
     expect(prevNext('quickstart').next?.slug).toBe('writing-notes');
     expect(prevNext('writing-notes').prev?.slug).toBe('quickstart');
     expect(prevNext('install-and-setup').prev).toBeUndefined();
-    expect(prevNext('changelog').next).toBeUndefined();
+    expect(prevNext('contact-support').next).toBeUndefined();
     expect(prevNext('nope')).toEqual({});
   });
 });

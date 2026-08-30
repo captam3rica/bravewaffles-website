@@ -12,11 +12,9 @@ Consistent Notes lives in your menu bar — there when you need it, tucked away 
 
 ## Install from the Mac App Store
 
-1. Open the App Store on your Mac and search for **Consistent Notes**, or [get it here](#) directly.
+1. Open the App Store on your Mac and search for **Consistent Notes**, or [get it here](#mac-app-store) directly.
 2. Click **Get**, then **Install**.
 3. When it first opens, Consistent Notes adds its icon to the right side of your menu bar.
-
-> **Link note (remove at publish):** replace `#` with the live App Store URL when the listing is approved — same constant the product page uses (`APP_STORE_MAC_URL` in `src/lib/site.ts`).
 
 ## Start your free trial
 
