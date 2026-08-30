@@ -64,10 +64,11 @@ main { flex: 1; display: flex; flex-direction: column; padding: 96px 48px 64px; 
 
 h1 { font-size: 64px; font-weight: 700; margin-bottom: 16px; }
 .tagline { font-size: 18px; color: var(--fg); max-width: 540px; }
-.tagline .accent { color: var(--purple); }
+.tagline .accent { color: var(--purple); font-style: italic; }
 
-.hero { display: flex; flex-direction: column; align-items: center; gap: 32px; }
+.hero { display: flex; flex-direction: column; align-items: center; gap: 32px; margin-top: 160px; }
 .hero-text { text-align: center; }
+.hero-text h1 { font-size: 30px; }
 .hero-black { width: 125px; height: auto; flex: none; filter: invert(1); }
 html[data-theme='light'] .hero-black { filter: none; }
 
