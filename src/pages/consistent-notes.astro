@@ -22,19 +22,19 @@ const features = [
 <Base title={`${PRODUCT_NAME} — a macOS menu bar journaling app`}>
   <main class="page">
     <div class="product-header">
-      <div>
+      <img class="app-icon" src="/app-icon.png" width="128" height="128" alt="Consistent Notes app icon" />
+      <div class="product-info">
         <h1>{PRODUCT_NAME}</h1>
         <p class="tagline">{PRODUCT_TAGLINE}</p>
+        <div class="cta-row">
+          <AppStoreBadge platform="mac" href={APP_STORE_MAC_URL} />
+          <AppStoreBadge platform="ios" href={APP_STORE_IOS_URL} comingSoon />
+        </div>
+        <p class="docs-link-line" style="margin-top: 12px; font-size: 14px;">
+          Questions? <a href="/consistent-notes/docs/">Read the Docs</a>.
+        </p>
       </div>
-      <img class="app-icon" src="/app-icon.png" width="128" height="128" alt="Consistent Notes app icon" />
     </div>
-    <div class="cta-row">
-      <AppStoreBadge platform="mac" href={APP_STORE_MAC_URL} />
-      <AppStoreBadge platform="ios" href={APP_STORE_IOS_URL} comingSoon />
-    </div>
-    <p class="docs-link-line" style="margin-top: 12px; font-size: 14px;">
-      Questions? <a href="/consistent-notes/docs/">Read the Docs</a>.
-    </p>
 
     <h2 class="section-title">Preview</h2>
     <div class="shots-grid">
