@@ -33,7 +33,7 @@ Click the checkbox (or press **⌘⇧⏎**) to complete a todo. Checking a paren
 
 Press **⎋** or **⇧⌘C**. Everything saved on its own — entries autosave one and a half seconds after you stop typing.
 
-Come back tomorrow and write one word. Do that for a few days and the flame next to the app's name starts counting your [streak](/consistent-notes/docs/streaks-heatmaps/).
+Come back tomorrow and write one word. Do that for a few days and the streak counter next to the app's name starts counting your [streak](/consistent-notes/docs/streaks-heatmaps/).
 
 ## What's next
 

@@ -1,15 +1,15 @@
 ---
 title: Streaks & heatmaps
-description: The flame counts days in a row with an entry; the heatmap shows your year of writing.
+description: The streak counter tracks days in a row with an entry; the heatmap shows your year of writing.
 ---
 
 Consistent Notes keeps two gentle scoreboards. Neither judges word count — the point is showing up.
 
 ## Your streak
 
-The flame next to the app's name counts **days in a row with a non-empty entry — even one word counts**. Write something today and the flame appears; the count grows each consecutive day you write.
+The streak counter next to the app's name counts **days in a row with a non-empty entry — even one word counts**. Write something today and the badge appears; the count grows each consecutive day you write.
 
-Miss a day and the streak starts over. Because the count runs through *today*, the flame reads 0 until you've written something today — yesterday's work keeps the entries, not the badge.
+Miss a day and the streak starts over. Because the count runs through *today*, the badge stays hidden until you've written something today — yesterday's work keeps the entries, not the badge.
 
 The heatmap's legend also shows your **longest streak** — the longest run of consecutive writing days within the current calendar year.
 
@@ -23,4 +23,4 @@ Why list items? They're the cleanest signal of "what I did today" — plans, che
 
 ## Using them without obsessing
 
-Streaks work best as a nudge, not a job. If the flame gets loud, remember: one word keeps it lit, and streaks reset with no ceremony. The heatmap is the calmer view — a year of days, each exactly as dark as the day deserved.
+Streaks work best as a nudge, not a job. If the count gets loud, remember: one word keeps it going, and streaks reset with no ceremony. The heatmap is the calmer view — a year of days, each exactly as dark as the day deserved.
