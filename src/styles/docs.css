@@ -121,12 +121,12 @@ button.docs-search-btn .kbd { font-size: 12px; border: 1px solid var(--cl); bord
 .docs-pager a.next { margin-left: auto; text-align: right; }
 
 /* --- Mobile --- */
+.docs-mobile-bar { display: none; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--cl); margin-bottom: 24px; }
 @media (max-width: 1024px) {
   .docs-grid { grid-template-columns: minmax(0, 720px); }
   .docs-sidebar, .docs-rail { display: none; }
   .docs-mobile-bar { display: flex; }
 }
-.docs-mobile-bar { display: none; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--cl); margin-bottom: 24px; }
 button.docs-menu-btn {
   background: transparent; border: 1px solid var(--cl); border-radius: 8px; color: var(--fg);
   font: inherit; font-size: 14px; padding: 6px 12px; cursor: pointer;
