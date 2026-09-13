@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="#282a36"/>
-  <circle cx="600" cy="330" r="140" fill="#bd93f9"/>
+  <image href="bravewaffle-butter.png" x="460" y="190" width="280" height="280" preserveAspectRatio="xMidYMid meet"/>
   <text x="600" y="560" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="42" font-weight="700" fill="#f8f8f2">bravewaffles</text>
 </svg>

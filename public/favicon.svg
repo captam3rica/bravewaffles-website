@@ -1,25 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#bd93f9"/>
-  <mask id="m">
-    <circle cx="256" cy="256" r="180" fill="#fff"/>
-    <g fill="#000">
-      <rect x="134" y="134" width="52" height="52" rx="10"/>
-      <rect x="198" y="134" width="52" height="52" rx="10"/>
-      <rect x="262" y="134" width="52" height="52" rx="10"/>
-      <rect x="326" y="134" width="52" height="52" rx="10"/>
-      <rect x="134" y="198" width="52" height="52" rx="10"/>
-      <rect x="198" y="198" width="52" height="52" rx="10"/>
-      <rect x="262" y="198" width="52" height="52" rx="10"/>
-      <rect x="326" y="198" width="52" height="52" rx="10"/>
-      <rect x="134" y="262" width="52" height="52" rx="10"/>
-      <rect x="198" y="262" width="52" height="52" rx="10"/>
-      <rect x="262" y="262" width="52" height="52" rx="10"/>
-      <rect x="326" y="262" width="52" height="52" rx="10"/>
-      <rect x="134" y="326" width="52" height="52" rx="10"/>
-      <rect x="198" y="326" width="52" height="52" rx="10"/>
-      <rect x="262" y="326" width="52" height="52" rx="10"/>
-      <rect x="326" y="326" width="52" height="52" rx="10"/>
-    </g>
-  </mask>
-  <rect width="512" height="512" fill="#bd93f9" mask="url(#m)"/>
+  <clipPath id="c">
+    <circle cx="256" cy="256" r="230"/>
+  </clipPath>
+  <circle cx="256" cy="256" r="230" fill="#e8a33d"/>
+  <g clip-path="url(#c)" stroke="#5a1f02" stroke-width="14">
+    <line x1="160" y1="96" x2="160" y2="416"/>
+    <line x1="256" y1="96" x2="256" y2="416"/>
+    <line x1="352" y1="96" x2="352" y2="416"/>
+    <line x1="96" y1="160" x2="416" y2="160"/>
+    <line x1="96" y1="256" x2="416" y2="256"/>
+    <line x1="96" y1="352" x2="416" y2="352"/>
+  </g>
 </svg>
