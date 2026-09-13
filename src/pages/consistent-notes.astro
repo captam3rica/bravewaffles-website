@@ -36,21 +36,50 @@ const features = [
     <h2 class="section-title">Preview</h2>
     <div class="shots-grid">
       <figure class="shot">
-        <img class="shot-dark" src="/screenshots/editor-view-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes editor view" />
-        <img class="shot-light" src="/screenshots/editor-view-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes editor view" />
+        <button type="button" class="shot-open" data-index="0" aria-label="Open the editor view screenshot in a larger view">
+          <img class="shot-dark" src="/screenshots/editor-view-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes editor view" />
+          <img class="shot-light" src="/screenshots/editor-view-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes editor view" />
+        </button>
         <figcaption>Editor view</figcaption>
       </figure>
       <figure class="shot">
-        <img class="shot-dark" src="/screenshots/notes-list-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes notes list" />
-        <img class="shot-light" src="/screenshots/notes-list-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes notes list" />
+        <button type="button" class="shot-open" data-index="1" aria-label="Open the notes list screenshot in a larger view">
+          <img class="shot-dark" src="/screenshots/notes-list-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes notes list" />
+          <img class="shot-light" src="/screenshots/notes-list-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes notes list" />
+        </button>
         <figcaption>Notes list</figcaption>
       </figure>
       <figure class="shot">
-        <img class="shot-dark" src="/screenshots/year-view-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes year heatmap view" />
-        <img class="shot-light" src="/screenshots/year-view-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes year heatmap view" />
+        <button type="button" class="shot-open" data-index="2" aria-label="Open the year view screenshot in a larger view">
+          <img class="shot-dark" src="/screenshots/year-view-dark.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes year heatmap view" />
+          <img class="shot-light" src="/screenshots/year-view-light.png" width="1012" height="1012" loading="lazy" decoding="async" alt="Consistent Notes year heatmap view" />
+        </button>
         <figcaption>Year view</figcaption>
       </figure>
     </div>
+
+    <dialog id="lightbox" class="lightbox" aria-label="Screenshot viewer">
+      <div class="lightbox-stage">
+        <div class="lightbox-slide">
+          <img class="shot-dark" src="/screenshots/editor-view-dark.png" width="1012" height="1012" alt="Consistent Notes editor view" />
+          <img class="shot-light" src="/screenshots/editor-view-light.png" width="1012" height="1012" alt="Consistent Notes editor view" />
+          <p class="lightbox-caption">Editor view</p>
+        </div>
+        <div class="lightbox-slide" hidden>
+          <img class="shot-dark" src="/screenshots/notes-list-dark.png" width="1012" height="1012" alt="Consistent Notes notes list" />
+          <img class="shot-light" src="/screenshots/notes-list-light.png" width="1012" height="1012" alt="Consistent Notes notes list" />
+          <p class="lightbox-caption">Notes list</p>
+        </div>
+        <div class="lightbox-slide" hidden>
+          <img class="shot-dark" src="/screenshots/year-view-dark.png" width="1012" height="1012" alt="Consistent Notes year heatmap view" />
+          <img class="shot-light" src="/screenshots/year-view-light.png" width="1012" height="1012" alt="Consistent Notes year heatmap view" />
+          <p class="lightbox-caption">Year view</p>
+        </div>
+        <button id="lightbox-prev" class="lightbox-nav lightbox-prev" type="button" aria-label="Previous screenshot">‹</button>
+        <button id="lightbox-next" class="lightbox-nav lightbox-next" type="button" aria-label="Next screenshot">›</button>
+        <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close screenshot viewer">×</button>
+      </div>
+    </dialog>
 
     <h2 class="section-title">Core Features</h2>
     <div class="features">
@@ -80,4 +109,8 @@ const features = [
     <h2 class="section-title">Sync <span class="coming-soon-pill">Coming soon</span></h2>
     <p class="prose">Your notes live in the menu bar and sync between your Mac and iPhone over iCloud.</p>
   </main>
+  <script>
+    import { initLightbox } from '../lib/lightbox';
+    initLightbox();
+  </script>
 </Base>
