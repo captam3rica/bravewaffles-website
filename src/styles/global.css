@@ -200,7 +200,8 @@ html[data-theme='dark'] .shot-light { display: none; }
 
 @media (max-width: 720px) {
   .wrap { padding: 0 24px; }
-  main { padding: 24px 24px 16px; justify-content: center; }
+  main { padding: 64px 24px 48px; }
+  .home { padding: 24px 24px 16px; justify-content: center; }
   nav .inner { flex-wrap: wrap; padding: 20px 24px; }
   footer .inner { padding: 20px 24px 32px; }
   h1 { font-size: 44px; }
