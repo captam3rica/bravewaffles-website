@@ -200,11 +200,12 @@ html[data-theme='dark'] .shot-light { display: none; }
 
 @media (max-width: 720px) {
   .wrap { padding: 0 24px; }
-  main { padding: 64px 24px 48px; }
+  main { padding: 24px 24px 16px; justify-content: center; }
   nav .inner { flex-wrap: wrap; padding: 20px 24px; }
   footer .inner { padding: 20px 24px 32px; }
   h1 { font-size: 44px; }
-  .projects .grid { grid-template-columns: 1fr; }
+  .hero { margin-top: 0; gap: 20px; }
+  .projects { margin-top: 28px; }
   .features { grid-template-columns: 1fr; }
   .shots-grid { grid-template-columns: 1fr; }
   .product-header { flex-direction: column; align-items: center; text-align: center; }
