@@ -135,8 +135,9 @@ Expected: build completes with no errors; `astro check` reports no errors; vites
 
 - [ ] **Step 3: Manual mobile viewport check**
 
-Run: `npm run dev`, open the site, and use the browser device toolbar at ~390×844 (and ~360×640).
+Run: `npm run dev`, open the site, and use the browser device toolbar at ~390×844 (a typical modern phone).
 Expected: nav, hero (current waffle + "bravewaffles" + tagline), "Projects" heading + pill, and footer are all visible with no scrolling; the hero + projects block is vertically centered between nav and footer. Toggle the theme and confirm the pill icon inverts (white in dark, black in light).
+Note: on very short viewports (~360×640) the shared two-row mobile nav plus hero-plus-projects may still exceed one screen; if that matters, tighten the hero/projects gaps or the nav further as a follow-up.
 
 - [ ] **Step 4: Commit**
 
