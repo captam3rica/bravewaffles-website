@@ -1,15 +1,16 @@
 ---
-import { BLOG_URL } from '../lib/site';
 import ThemeToggle from './ThemeToggle.astro';
 
+// Normalize trailing slashes so '/consistent-notes' and '/consistent-notes/' match the same link.
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+
 const links = [
-  { href: '/', label: 'Home' },
-  { href: '/consistent-notes', label: 'Consistent Notes' },
-  { href: '/consistent-notes/docs/', label: 'Docs' },
-  { href: BLOG_URL, label: 'Blog \u2192' },
+  { href: '/', label: 'Home', match: path === '/' },
+  { href: '/consistent-notes', label: 'Consistent Notes', match: path === '/consistent-notes' },
+  { href: '/consistent-notes/docs/', label: 'Docs', match: path.startsWith('/consistent-notes/docs') },
 ];
 ---
-<nav>
+<nav class="site-nav">
   <div class="inner">
     <a class="brand" href="/">
       <img class="brand-waffle brand-waffle-white" src="/bravewaffle-white.png" width="24" height="24" alt="" />
@@ -18,7 +19,7 @@ const links = [
     </a>
     <div class="right">
       <div class="links">
-        {links.map((l) => <a href={l.href}>{l.label}</a>)}
+        {links.map((l) => <a href={l.href} aria-current={l.match ? 'page' : undefined}>{l.label}</a>)}
       </div>
       <ThemeToggle />
     </div>
