@@ -48,6 +48,7 @@ nav .links { display: flex; gap: 20px; }
 nav .right { display: flex; align-items: baseline; gap: 20px; }
 nav a { color: var(--comment); text-decoration: none; }
 nav a:hover { color: var(--fg); }
+.site-nav a[aria-current='page'] { color: var(--purple); border-bottom: 2px solid var(--purple); padding-bottom: 2px; }
 
 .theme {
   display: flex; align-items: center; justify-content: center;
