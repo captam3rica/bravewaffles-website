@@ -49,6 +49,8 @@ Open Settings with **⌘,** or from the gear menu. Four tabs: General, Shortcuts
 |---|---|---|
 | Hide tab bar | off | Removes the Notes / Heatmap / ToDos tabs; view switching stays on **⌘N / ⌘Y / ⌘T** |
 | More vertical space | off | A taller popover, so more content fits |
+| Hide empty days | off | Filters the Notes list to days with entries; toggle with **⌘⇧H** or the filter button in the header. Today stays pinned |
+| Pin popover | off | Keeps the popover open when you switch to another app or click away; toggle with **⌘⇧P**. A yellow dot in the header shows it's pinned |
 
 ### Vim Mode
 

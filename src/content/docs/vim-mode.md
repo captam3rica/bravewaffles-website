@@ -27,6 +27,8 @@ With **Vim motions in tabs** on, the Notes and ToDos lists respond to the shortc
 | **⌘T**     | Go to ToDos                 |
 | **⌘,**     | Settings                    |
 | **⌘⇧F**    | Search every entry          |
+| **⌘⇧H**    | Hide empty days             |
+| **⌘⇧P**    | Pin popover                 |
 | Hold **⌘** | Shortcuts overlay           |
 
 ### ToDos list
@@ -48,6 +50,7 @@ With **Vim motions in tabs** on, the Notes and ToDos lists respond to the shortc
 | **⌘Y**     | Go to Year View                       |
 | **⌘T**     | Go to ToDos                           |
 | **⌘,**     | Settings                              |
+| **⌘⇧P**    | Pin popover                           |
 | Hold **⌘** | Shortcuts overlay                     |
 
 ## Vim mode in the editor

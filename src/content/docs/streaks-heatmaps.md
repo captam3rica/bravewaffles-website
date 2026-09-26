@@ -11,11 +11,11 @@ The streak counter next to the app's name counts **days in a row with a non-empt
 
 Miss a day and the streak starts over. Because the count runs through *today*, the badge stays hidden until you've written something today — yesterday's work keeps the entries, not the badge.
 
-The heatmap's legend also shows your **longest streak** — the longest run of consecutive writing days within the current calendar year.
+The heatmap's legend also shows your **longest streak** — the longest run of consecutive writing days within the year on display.
 
 ## The heatmap
 
-The Heatmap tab (**⌘Y**) shows the whole current year, one row per month, scrollable top to bottom. Hover any day to preview its entry; click to open it. Today gets a dot.
+The Heatmap tab (**⌘Y**) shows one year at a time, one row per month, scrollable top to bottom. Use the ‹ › chevrons above the grid to step between years — the year on display is remembered for next time. Hover any day to preview its entry; click to open it. Today gets a dot.
 
 **Darker days had more list items** (bullets and checkboxes) — a day with three bullets is darker than a day with one, and a day of paragraphs alone is bright. The scale runs from one list item up to thirty-three and beyond; it's about the shape of your day, not the word count.
 

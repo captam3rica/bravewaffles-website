@@ -9,6 +9,10 @@ Each day in Consistent Notes is one entry, dated and saved automatically. This p
 
 The entry for today is always one keystroke away (**⇧⌘C**). Use **⌘[** and **⌘]** to move to yesterday's and tomorrow's entries, or pick any day from the notes list. In the list, **↑ ↓** move between days, **⏎** opens the selected one, and **⎵** jumps back to today.
 
+### Hide empty days
+
+Days you haven't written yet sit in the list as empty rows. The filter button in the header — or **⌘⇧H** — collapses them so only days with entries remain; today stays pinned at its place in the list. While the filter is on, the footer shows how many days are hidden.
+
 ## Formatting as you type
 
 The editor highlights markdown live — bold shows bold, headings get color, code gets a chip background — while the raw characters stay in the file. By default, formatting characters (the asterisks, backticks, and friends) are hidden except on the line you're editing, so yesterday's entries read clean. Prefer to always see them? **Settings → General → Markdown delimiters → Always show**.
@@ -18,6 +22,7 @@ The editor also gives you a hand while typing:
 - **Auto-pairs** — typing `(`, `[`, `{`, a quote, or a backtick inserts the closing character; backspacing an empty pair removes both.
 - **Smart lists** — pressing **Return** continues bullets, numbers (incrementing), and checkboxes; pressing **Return** on an empty list item removes the marker.
 - **Paste links over text** — select some text, paste a URL, and it becomes `[text](url)`.
+- **Smart Home/End** — **Home** and **End** follow the visible line, so on wrapped lines they stop at the fold instead of jumping the whole paragraph; **Home** skips leading indentation first.
 
 ## Emoji shortcodes
 
@@ -29,7 +34,7 @@ Type `:` followed by letters to insert an emoji: `:fire` matches, **⏎** insert
 
 ## Saving
 
-Entries autosave one and a half seconds after you stop typing, and save again when you close an entry or leave the app. **⌘S** saves immediately if you want the certainty. Every save also writes the entry's Markdown file to disk — see [where your entries live](/consistent-notes/docs/where-your-notes-live/).
+Entries autosave one and a half seconds after you stop typing, and save again when you close an entry or leave the app. **⌘S** saves immediately if you want the certainty. When you reopen a day, the cursor returns to where you left off. Every save also writes the entry's Markdown file to disk — see [where your entries live](/consistent-notes/docs/where-your-notes-live/).
 
 ## The toolbar
 

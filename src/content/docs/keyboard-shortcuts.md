@@ -27,6 +27,8 @@ Hold **⌘** for three-quarters of a second, anywhere in the app, and the shortc
 | **⌘T**     | Go to ToDos                 |
 | **⌘,**     | Settings                    |
 | **⌘⇧F**    | Search every entry          |
+| **⌘⇧H**    | Hide empty days             |
+| **⌘⇧P**    | Pin popover                 |
 | Hold **⌘** | Shortcuts overlay           |
 
 ## Editor
@@ -52,6 +54,8 @@ Hold **⌘** for three-quarters of a second, anywhere in the app, and the shortc
 | **⌘R**         | Roll over todos                 |
 | **⌘;**         | Check spelling (with spell check on) |
 | **⌘⇧T**        | Toggle the formatting toolbar   |
+| **⌘⇧X**        | Check / uncheck the current todo |
+| **⌘⇧-**        | Skip / unskip the current todo   |
 | **⌘S**         | Save now                        |
 | **⌘⏎**         | Save and close                  |
 | **⌘[**         | Previous day's entry            |
@@ -59,6 +63,7 @@ Hold **⌘** for three-quarters of a second, anywhere in the app, and the shortc
 | **⌘T**         | Go to ToDos                     |
 | **⌘N**         | Go to Notes List                |
 | **⌘Y**         | Go to Year View                 |
+| **⌘⇧P**        | Pin popover                     |
 | **⇥**          | Indent                          |
 | **⇧⇥**         | Outdent                         |
 | **⎋**          | Close the editor                |
@@ -80,6 +85,7 @@ Hold **⌘** for three-quarters of a second, anywhere in the app, and the shortc
 | **⌘Y**     | Go to Year View                       |
 | **⌘T**     | Go to ToDos                           |
 | **⌘,**     | Settings                              |
+| **⌘⇧P**    | Pin popover                           |
 | Hold **⌘** | Shortcuts overlay                     |
 
 ## Vim (when enabled)
