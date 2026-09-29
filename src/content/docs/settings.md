@@ -17,6 +17,7 @@ Open Settings with **⌘,** or from the gear menu. Four tabs: General, Shortcuts
 | Autocorrect | off | Needs spell check on |
 | Markdown delimiters | Current line | When formatting characters show: Always show / Current line / Hidden |
 | Hide formatting toolbar | off | Hides the toolbar (same as **⌘⇧T**) |
+| Hide day navigation buttons | off | Hides the **‹ ›** buttons in the editor header; **⌘[** and **⌘]** still move between days |
 
 ### Reminders
 

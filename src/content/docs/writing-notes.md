@@ -7,7 +7,7 @@ Each day in Consistent Notes is one entry, dated and saved automatically. This p
 
 ## One entry per day
 
-The entry for today is always one keystroke away (**⇧⌘C**). Use **⌘[** and **⌘]** to move to yesterday's and tomorrow's entries, or pick any day from the notes list. In the list, **↑ ↓** move between days, **⏎** opens the selected one, and **⎵** jumps back to today.
+The entry for today is always one keystroke away (**⇧⌘C**). Use **⌘[** and **⌘]** to move to yesterday's and tomorrow's entries — or click the **‹ ›** buttons in the editor's header, which step between days the same way (the entry is saved before you move on). Pick any day from the notes list instead: **↑ ↓** move between days, **⏎** opens the selected one, and **⎵** jumps back to today. Prefer a minimal header? **Settings → General → Editor → Hide day navigation buttons** removes the **‹ ›** buttons — the shortcuts keep working.
 
 ### Hide empty days
 
