@@ -3,7 +3,7 @@ title: Search
 description: Find any word you've ever written — search every entry from anywhere in the app.
 ---
 
-**⌘⇧F** searches every entry, from anywhere in the app. Results appear as you type: one line per match, newest entries first, with the matching words highlighted. **↑ ↓** pick a result, **⏎** opens the entry and jumps to (and briefly highlights) the match.
+**⌘⇧F** searches every entry, from anywhere in the app. Results appear as you type: one line per match, newest entries first, with the matching words highlighted. **↑ ↓** pick a result, **⏎** opens the entry and jumps to (and briefly highlights) the match. Opened from inside an entry, dismissing search (**⎋** or clicking away) returns you to that entry instead of dropping back to the list.
 
 Search matches text anywhere in an entry — headings, todos, and body text alike — ignoring case and diacritics (searching `cafe` finds `café`).
 

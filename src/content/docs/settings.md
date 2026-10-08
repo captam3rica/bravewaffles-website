@@ -36,7 +36,7 @@ Open Settings with **⌘,** or from the gear menu. Four tabs: General, Shortcuts
 
 | Setting | Default | What it does |
 |---|---|---|
-| Pin icon to far right | on | Keeps the menu bar icon in the rightmost slot; still draggable with **⌘** and your spot is remembered |
+| Pin icon to far right | on | Pins the icon just left of Apple's menu bar extras (Spotlight, Wi‑Fi, battery); turn off to **⌘**-drag it and have your spot remembered |
 
 ### Themes
 
@@ -61,7 +61,7 @@ Open Settings with **⌘,** or from the gear menu. Four tabs: General, Shortcuts
 | Vim mode in editor | off | Full modal editing in the editor |
 | Move up and down by visual lines | on | **j/k** follow wrapped lines; counts like `5j` always use logical lines |
 | Escape sequence | — | Two keys that exit Insert mode (classic: `jk`) |
-| Show vim indicator | on | The **N / I / VISUAL** mode badge in the editor header |
+| Show vim indicator | on | Shows a colored dot in the main header when vim is on; the editor keeps its own **N / I / VISUAL** mode badge |
 | Hardcore mode | off | Disables arrow keys in the lists. See [Vim mode](/consistent-notes/docs/vim-mode/) |
 
 ## Shortcuts

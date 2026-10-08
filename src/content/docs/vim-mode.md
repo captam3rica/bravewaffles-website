@@ -153,6 +153,10 @@ With **Vim mode in editor** on, the editor is fully modal. You start in **Normal
 | **y a "** | Yank around quotes        |
 | **y i p** | Yank inner paragraph      |
 | **y a p** | Yank around paragraph     |
+| **y a g** | Yank the entire document  |
+| **y i g** | Yank the document, trimmed of blank lines |
+
+Delete (**d**, **D**, **x**), change (**c**, **C**, **S**), and yank (**y**) commands all copy the removed text to the clipboard — paste it with **p** or **P**.
 
 ### Indent and other commands
 
@@ -197,7 +201,7 @@ A couple of options tune it:
 
 - **Move up and down by visual lines** (on by default) — **j**/**k** follow wrapped lines; counts like `5j` always use logical lines.
 - **Escape sequence** — record two keystrokes (classic: `jk`) that exit Insert mode without reaching for **⎋**.
-- **Show vim indicator** — the little mode badge (N / I / VISUAL) in the editor header.
+- **Show vim indicator** — a small colored dot in the main header while vim is on. It's separate from the editor's own mode badge (**N / I / VISUAL**), which is always shown while editing in vim.
 
 ## Hardcore mode
 
